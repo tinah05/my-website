@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>FAUSTINAH BUSINESS SOLUTIONS</title>
+<meta name="viewport"content="width=device-width,initial-scale=1">
+<link rel="stylesheet" hrel="main.css">
+<script src=""></script>
+<head>
+
+<body><style>
+</style>
+<script src="app.js"></script>
+ <style>
+                h1{
+                    color:blue;
+                    font-family: Verdana;
+                    font-size: 300%;
+                }
+                h2{
+                    color: crimson;
+                    font-family: Courier;
+                    font-size: 200%;
+                }
+                p{
+                    color: darkmagenta;
+                    font-family: Courier;
+                    font-size: 100%;
+                }
+                body{
+                    background-color: pink;
+                    text-align: center;
+                    }
+                .images{
+                    margin:100px;
+                    border:1px solid #cccccc;
+                    align-items: center;
+                
+                }
+                .button{
+                    background-color: red;
+                    color: white;
+                    padding: 15px 25px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+                .mySlides {
+                    display:none;
+                    margin:100px
+                    align-items:center;
+                    }
+
+            </style>
+            </head>
+ <h1> TINAH BEAUTY PARLOR </h1>
+            <h2>SERVICE</h2>
+            <p> you are welcome expect the best from us.
+            </p>
+            <p>this is agood saloon where e mind your beauty </p>
+              <header>
+                <nav>
+                   <a href="index.html">HOME</a>
+                    <a href="about us.html">ABOUT US</a>
+                    <a href="services.html">SERVICES</a>
+                    <a href="signup.html">SIGN UP</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="register.html">REGISTER</a> 
+                </nav>
+            </header>
+
+<h2 class="center">you can look down to see some of our hair styles click one by one</h2>
+<dive class="center">
+<div class="section">
+  <img class="mySlides" src="images/ta.jpg," style="width:40%">
+  <img class="mySlides" src="images/tb.jpg" style="width:40%" > 
+  <img class="mySlides" src="images/tc.jpg" style="width:40%" > 
+  <img class="mySlides" src="images/td.jpg" style="width:40%" > 
+<img class="mySlides" src="images/te.jpg" style="width:40%" >
+<img class="mySlides" src="images/tf.jpg" style="width:40%" >
+<img class="mySlides" src="images/tg.jpg" style="width:40%" >
+<img class="mySlides" src="images/th.jpg" style="width:40%" >
+<img class="mySlides" src="images/ti.jpg" style="width:40%" >
+<img class="mySlides" src="images/tj.jpg" style="width:40%" >
+<img class="mySlides" src="images/tk.jpg" style="width:40%" > 
+</div>
+</div> 
+
+
+<div class="center">
+  <div class="section">
+    <button class="button light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="button light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="button demo" onclick="currentDiv(1)">1</button> 
+  <button class="button demo" onclick="currentDiv(2)">2</button> 
+  <button class="button demo" onclick="currentDiv(3)">3</button> 
+<button class="button demo" onclick="currentDiv(4)">4</button> 
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " red";
+}
+</script>
+
+
+
+<h1>tinah beauty parlor</h1>
+<p>your a wel come to our saloon feel at home</p>
+<p>here we mind your beauty because we believe that your beauty is your pride.</p>  
+        
+                <img style="background: red; border: none; border-radius: 25px;">
+            </div>
+            
+            <section>
+                <button style="background: red; border: none; border-radius: 25px;">
+                    <a href="register.html" style="color: white;">Register now</a>
+                </button>
+            </section>
+
+            <footer>
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="about us.html">ABOUT US</a>
+                    <a href="services.html">SERVICES</a>
+                    <a href="signup.html">SIGN UP</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="register.html">REGISTER</a> 
+        
+                </nav>
+            </footer>  
+
+
+</body>
+</html>
